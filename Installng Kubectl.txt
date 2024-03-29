@@ -1,0 +1,5 @@
+https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html - Installing Kubectl 
+
+https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html - Creating a Kube Config File
+
+https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html - Updating Kubeconfig File

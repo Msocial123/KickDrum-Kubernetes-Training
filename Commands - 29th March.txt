@@ -1,0 +1,42 @@
+ 133 kubectl get nodes
+ 134 kubectl apply -f deployment.yaml
+ 135 kubectl apply -f deployment.yaml
+ 136 kubectl apply -f deployment.yaml
+ 137 kubectl apply -f deployment.yaml
+ 138 clear
+ 139 kubectl get deployments
+ 140 kubectl get deployments
+ 141 kubectl get pods -o wide
+ 142 kubectl get pods -o wide
+ 143 kubectl apply -f deployment.yaml
+ 144 kubectl rollout history
+ 145 kubectl rollout history
+ 146 kubectl get deployments
+ 147 kubectl describe deployment node-app-deployment
+ 148 kubectl apply -f deployment.yaml
+ 149 kubectl describe deployment node-app-deployment
+ 150 kubectl get pods -o wide
+ 151 kubectl get events
+ 152 kubectl get events
+ 153 kubectl describe deployment node-app-deployment
+ 154 kubectl apply -f deployment.yaml
+ 155 kubectl describe deployment node-app-deployment
+ 156 kubectl apply -f deployment-new.yaml
+ 157 kubectl get deployments
+ 158 kubectl apply -f deployment-new.yaml
+ 159 kubectl get deployments
+ 160 kubectl describe deployment node-app
+ 161 kubectl get pods -o wide
+ 162 kubectl describe pod node-app-6bc67896d-5zd45
+ 163 kubectl get deployments
+ 164 kubectl set image deployment/node-app nginx-app=nginx:1.25.4-alpine3.18-slim
+ 165 kubectl get deployments
+ 166 kubectl describe deployment node-app
+ 167 kubectl get pods -o wide
+ 168 kubectl describe pod node-app-6c75fd8fd4-7xgq9
+ 169 kubectl get events --sort-by=.metadata.creationTimestamp
+ 170 kubectl describe deployment node-app
+ 171 kubectl get pods -o wide
+ 172 kubectl set image deployment/node-app nginx-app=nginx
+ 173 kubectl get pods -o wide
+ 174 kubectl get pods -o wide

@@ -1,0 +1,12 @@
+Assignment -1 : https://github.com/Msocial123/hostel_reservation.git
+
+Assignment -2 : https://github.com/Msocial123/HostelMess.git
+
+Assignment -3 : https://github.com/syedadeeb99/eventbooking-monitoring.git
+
+Assignment -4: https://github.com/Msocial123/LoanApp.git
+
+
+Please try build docker images for the above mentioned projects and write a declarative YAML Files and deploy docker images in pods.
+
+

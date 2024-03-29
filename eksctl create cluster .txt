@@ -1,0 +1,23 @@
+eksctl create cluster \
+  --name your-cluster-name \
+  --version 1.21 \
+  --region your-region \
+  --nodegroup-name your-node-group-name \
+  --node-type t3.medium \
+  --nodes 2 \
+  --nodes-min 1 \
+  --nodes-max 3 \
+  --node-ami auto \
+  --vpc-id your-vpc-id \
+  --subnets your-subnet-ids \
+  --node-private-networking \
+  --ssh-access \
+  --ssh-public-key your-ssh-public-key \
+  --managed \
+  --asg-access \
+  --external-dns-access \
+  --full-ecr-access \
+  --alb-ingress-access \
+  --appmesh-access \
+  --node-labels "environment=production" \
+  --node-labels "role=worker"
