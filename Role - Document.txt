@@ -1,0 +1,15 @@
+Step1 : You have create Policy - EKS - List,Read - Resources : ALL Resources 
+
+Step2 : Create IAM User Account and Attach Policy 
+
+Step3: Create a Namespace - Which Namespace you have to give access to the User
+
+Step4 : Create a Role - Rolename , Namespace 
+
+Step5: In the Role Binding - You have bind the role to the user and Namespace 
+
+Step6: Edit kubectl edit -n kube-system configmap aws-auth -o yaml 
+
+Step7: Add Section Called MapUsers -- Enter User ARN,User Name : Save 
+
+Step8: Login IAM and Check the Access 
