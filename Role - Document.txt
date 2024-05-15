@@ -13,3 +13,5 @@ Step6: Edit kubectl edit -n kube-system configmap aws-auth -o yaml
 Step7: Add Section Called MapUsers -- Enter User ARN,User Name : Save 
 
 Step8: Login IAM and Check the Access 
+
+https://851725651259.signin.aws.amazon.com/console

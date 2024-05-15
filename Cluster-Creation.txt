@@ -1,0 +1,27 @@
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: spot-cluster
+  region: ap-south-1
+
+managedNodeGroups:
+
+# `instanceTypes` defaults to [`m5.large`]
+- name: spot-1
+  spot: true
+  ssh:
+    publicKeyName: my-ec2-keypair
+
+eksctl create cluster --config-file=[file-name].yaml
+
+eksctl delete cluster --config-file=[file-name].yaml
