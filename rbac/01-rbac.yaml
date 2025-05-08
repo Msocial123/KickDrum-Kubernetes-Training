@@ -1,15 +1,15 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: prod-ns
+  name: roboshop
   labels:
     name: roboshop
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  namespace: prod-ns
-  name: test-admin-role
+  namespace: roboshop
+  name: roboshop-admin-role
 rules:
 - apiGroups: ["*"] # "" indicates the core API group
   resources: ["*"]
@@ -18,13 +18,13 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: test-admin-rolebinding
-  namespace: prod-ns
+  name: roboshop-admin-rolebinding
+  namespace: roboshop
 subjects:
 - kind: User
-  name: kickdrum-user
+  name: roboshop-admin
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
-  name: test-admin-role
+  name: roboshop-admin-role
   apiGroup: rbac.authorization.k8s.io
